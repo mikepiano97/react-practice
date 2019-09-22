@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Setting up demo project</title>
+</head>
+<body>
+    <div id="root"></div>
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <script type="text/babel">
+        // const Hello = React.createElement('div', null, 'Hello Coders.Tokyo');
+        // const root = document.getElementById('root');
+        // ReactDOM.render(Hello, root);
+
+        // 1 doan viet theo Babeljs
+        // const Title = <div className="title">React Tutorials</div>;
+
+        // Render thoi khoa bieu
+        const p1 = <p><b>Sang:</b>An sang, di lam</p>;
+        const p2 = <p><b>Trua:</b>An trua, ngu trua</p>;
+        const p3 = <p><b>Chieu:</b>Lam viec, don vo</p>;
+        const p4 = <p><b>Toi:</b>Coding</p>;
+        const App = React.createElement('div', null, p1, p2, p3, p4);
+        const root = document.getElementById('root');
+        ReactDOM.render(App, root);
+
+        // viet code React de dung len 1 list danh sach cac cuon sach yeu thich
+        // const Heading1 = React.createElement('h1', null, 'Danh sach nhung cuon sach yeu thich');
+        // const List1 = React.createElement('li', null, 'Tuan lam viec 4h');
+        // const List2 = React.createElement('li', null, 'Tuoi tre cua ban dang gia bao nhieu');
+        // const List3 = React.createElement('li', null, 'Minh nghi gi khi noi ve hanh phuc');
+        // const UnorderList = React.createElement('ul', null, List1, List2, List3);
+        // const App = React.createElement('div', null, Heading1, UnorderList);
+        
+        // const root = document.getElementById('root'); 
+        // ReactDOM.render(App, root);
+        // ReactDOM.render(Title, root);
+    </script>
+</body>
+</html>
